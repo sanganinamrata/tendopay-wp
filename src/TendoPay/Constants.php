@@ -26,25 +26,22 @@ class Constants {
 
 	const HASH_ALGORITHM = 'sha256';
 
-	const BASE_API_URL = 'https://app.tendopay.ph';
-	const SANDBOX_BASE_API_URL = 'https://app.tendopay.ph';
+	const BASE_API_URL = 'https://beta.tendopay.ph';
+	const SANDBOX_BASE_API_URL = 'https://alpha.tendopay.ph';
 
-	const REDIRECT_URI = 'https://app.tendopay.ph/payments/authorise';
-	const VIEW_URI_PATTERN = 'https://app.tendopay.ph/view/transaction/%s';
+	const REDIRECT_URI = 'https://beta.tendopay.ph/payments/authorise';
+	const VIEW_URI_PATTERN = 'https://beta.tendopay.ph/view/transaction/%s';
 	const VERIFICATION_ENDPOINT_URI = 'payments/api/v1/verification';
 	const AUTHORIZATION_ENDPOINT_URI = 'payments/api/v1/authTokenRequest';
 	const DESCRIPTION_ENDPOINT_URI = 'payments/api/v1/paymentDescription';
 	const BEARER_TOKEN_ENDPOINT_URI = 'oauth/token';
 
-	const SANDBOX_REDIRECT_URI = 'https://app.tendopay.ph/payments/authorise';
-	const SANDBOX_VIEW_URI_PATTERN = 'https://app.tendopay.ph/view/transaction/%s';
+	const SANDBOX_REDIRECT_URI = 'https://beta.tendopay.ph/payments/authorise';
+	const SANDBOX_VIEW_URI_PATTERN = 'https://beta.tendopay.ph/view/transaction/%s';
 	const SANDBOX_VERIFICATION_ENDPOINT_URI = 'payments/api/v1/verification';
 	const SANDBOX_AUTHORIZATION_ENDPOINT_URI = 'payments/api/v1/authTokenRequest';
 	const SANDBOX_DESCRIPTION_ENDPOINT_URI = 'payments/api/v1/paymentDescription';
 	const SANDBOX_BEARER_TOKEN_ENDPOINT_URI = 'oauth/token';
-
-	const TENDOPAY_ICON = 'https://s3.ca-central-1.amazonaws.com/candydigital/images/tendopay/tp-icon-32x32.png';
-	const TENDOPAY_FAQ = 'https://tendopay.ph/page-faq.html';
 
 	/**
 	 * Below constant names are used as keys of data send to or received from TP API
@@ -91,6 +88,7 @@ class Constants {
 	 * Below constants are the keys of description object's order details that are being sent during request to Description Endpoint
 	 */
 	const ID_ORDER_PROPNAME = 'id';
+	const SHIPPING_ORDER_PROPNAME = 'shipping';
 	const SUBTOTAL_ORDER_PROPNAME = 'subtotal';
 	const TOTAL_ORDER_PROPNAME = 'total';
 

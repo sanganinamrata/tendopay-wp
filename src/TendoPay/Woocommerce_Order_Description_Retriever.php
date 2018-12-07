@@ -129,6 +129,7 @@ class Woocommerce_Order_Description_Retriever {
 
 		return apply_filters( 'tendopay_description_meta', [
 			Constants::ID_ORDER_PROPNAME       => $this->order->get_id(),
+			Constants::SHIPPING_ORDER_PROPNAME => $this->order->get_total_shipping(),
 			Constants::SUBTOTAL_ORDER_PROPNAME => $subtotal_with_shipping,
 			Constants::TOTAL_ORDER_PROPNAME    => $this->order->get_total(),
 		] );
