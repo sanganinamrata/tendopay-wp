@@ -276,10 +276,10 @@ class Gateway extends WC_Payment_Gateway
 
         update_post_meta($order_id, self::TENDOPAY_PAYMENT_INITIATED_KEY, true);
         wc_clear_notices();
-        $redirect_url .= '&tendopay_status=tendopay_success';
         $redirect_url .= '&er=' . urlencode(wc_get_checkout_url());
 
         return [
+        	'tendopay_status' => 'tendopay_success',
             'result'   => 'success',
             'redirect' => $redirect_url
         ];
